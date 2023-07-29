@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER FORECAST</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    
+    <div id="weathermain">
+    <div class="header">
+        <h1>WEATHER FORECAST</h1>
+        <div>
+            <input type="text" name="" id="input" placeholder="Enter city name">
+            <button id="search" onclick="searchByCity()">Search</button></input>
+        </div>
+    </div>
+
+    <main>        
+        <div class="weather">
+            <h1 id="wing"></h1>
+            <h2 id="city">Delhi,IN</h2>  
+            <div class="temp-box">
+                <img src="weathericon.png" alt="" id="img">
+                <p id="temperature">26 °C</p>
+            </div>
+            <span id="clouds">Broken Clouds</span>
+        </div>
+        <div class="divider1"></div>
+
+        <div class="forecstH">
+            <p class="cast-header">Upcoming forecast</p>
+            <div class="templist">
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 29 °C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="forecstD">
+        <div class="divider2"></div>
+        <p class="cast-header"> Next 4 days forecast</p>
+        <div class="weekF">
+
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>31 °C / 31 °C</p>
+                <p class="desc">Overcast Clouds</p>
+            </div>
+        </div>
+    </div>
+    <div id="temp" class="air-info">
+        <h2 class="sub-heading">Air Quality Index :</h2>
+        <span class="air-quality">...</span>
+        <span class="arr">&nbsp;&rarr;&nbsp;</span>
+        <span class="air-quality-status">...</span>
+        <div class="component-container">
+            <h2 class="sub-heading">
+                Concentration of pollutants in air :
+            </h2>
+                <h3 class="component-names">Carbon Monoxide :<span class="component-val" data-comp="co"></span></h3>
+                
+            
+                <h3 class="component-names">Nitrogen Monoxide : <span class="component-val" data-comp="no"></span></h3>
+               
+        
+                <h3 class="component-names">Nitrogen Dioxide :<span class="component-val" data-comp="no2"></span></h3>
+                
+                <h3 class="component-names">Ozone :<span class="component-val" data-comp="o3"></span></h3>
+                
+                <h3 class="component-names">Sulphur Dioxide :<span class="component-val" data-comp="so2"></span></h3>
+                
+            
+                <h3 class="component-names">Fine particles matter :<span class="component-val" data-comp="pm2_5"></span></h3>
+                
+                <h3 class="component-names">Coarse particulate matter :<span class="component-val" data-comp="pm10"></span>
+                </h3>
+                
+                <h3 class="component-names">Ammonia :<span class="component-val" data-comp="nh3"></span>
+                </h3>
+                
+            <!--  micrograms per cubic meter of air (μg/m3)  -->
+        </div>
+    </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
